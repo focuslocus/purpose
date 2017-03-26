@@ -4,7 +4,7 @@
   "description": "8760 Mind Mapping Tool",
   "main": "app/app.js",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "./node_modules/.bin/eslint .",
     "start": "node ./bin/www",
     "dev": "nodemon --exec babel-node server/bin/www",
     "devServer": "webpack-dev-server"
