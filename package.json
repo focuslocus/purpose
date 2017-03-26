@@ -12,5 +12,11 @@
   "bugs": {
     "url": "https://github.com/focuslocus/purpose/issues"
   },
-  "homepage": "https://github.com/focuslocus/purpose#readme"
+  "homepage": "https://github.com/focuslocus/purpose#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
