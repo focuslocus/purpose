@@ -2,14 +2,11 @@
   "name": "purpose",
   "version": "0.0.1",
   "description": "8760 Mind Mapping Tool",
-  "main": "app.js",
+  "main": "app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/focuslocus/purpose.git"
-  },
+  "repository": "git+https://github.com/focuslocus/purpose.git",
   "author": "Andrew Deal | Jira Vinyoopongphan",
   "license": "MIT",
   "bugs": {
