@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 
 app.use('/', (req, res, next) => {
-  res.send('hello');
+  res.send('hello back!');
 });
 
-export default app;
+module.exports = app;
