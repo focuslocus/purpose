@@ -9,7 +9,7 @@
     "dev": "nodemon --exec babel-node server/bin/www",
     "devServer": "webpack-dev-server"
   },
-  "prepush": ["lint"],
+  "pre-push": ["lint"],
   "repository": "git+https://github.com/focuslocus/purpose.git",
   "author": "Andrew Deal | Jira Vinyoopongphan",
   "license": "MIT",
