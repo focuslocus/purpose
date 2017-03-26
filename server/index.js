@@ -9,12 +9,12 @@ const compiler = webpack(webpackConfig);
 
 app.use(webpackDev(compiler, {
   noInfo: true,
-  publicPath: webpackConfig.output.publicPath
+  publicPath: webpackConfig.output.publicPath,
 }));
 
-app.use(express.static(path.resolve(__dirname + '/../public')))
+app.use(express.static(path.resolve(__dirname, '/../public')));
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
