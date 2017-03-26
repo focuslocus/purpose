@@ -4,11 +4,12 @@
   "description": "8760 Mind Mapping Tool",
   "main": "app/app.js",
   "scripts": {
-    "prepush": "eslint .",
+    "lint": "eslint .",
     "start": "node ./bin/www",
     "dev": "nodemon --exec babel-node server/bin/www",
     "devServer": "webpack-dev-server"
   },
+  "prepush": ["lint"],
   "repository": "git+https://github.com/focuslocus/purpose.git",
   "author": "Andrew Deal | Jira Vinyoopongphan",
   "license": "MIT",
