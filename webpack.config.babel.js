@@ -1,25 +1,24 @@
-import webpack from 'webpack'
-import { resolve } from 'path'
+import { resolve } from 'path';
 
 module.exports = {
   entry: './app/app.js',
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   module: {
     rules: [
       {
         use: 'babel-loader',
-        test: /\.js$/
+        test: /\.js$/,
       }
-    ]
+    ],
   },
   resolve: {
-    extensions: ['.js', '.css']
+    extensions: ['.js', '.css'],
   },
   devServer: {
-    contentBase: resolve(__dirname, 'public')
-  }
-}
+    contentBase: resolve(__dirname, 'public'),
+  },
+};
