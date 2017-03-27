@@ -6,12 +6,15 @@ const typeDefs = `
     firstName: String
     lastName: String
     email: String
+    goals: [Goal]
+    theme: Theme
   }
   
   type Question {
     id: Int
     type: String
-    question: String
+    text: String
+    answer: Answer
   }
   
   type Answer {
@@ -38,15 +41,24 @@ const typeDefs = `
     milestones: [Milestone]
   }
   
+  type Theme {
+    id: Int
+    userId: Int!
+    name: String!
+    year: String!
+  }
+  
   enum Status {
-    done
-    in progress
-    ready
+    DONE
+    INPROGRESS
+    READY
   }
   
   type Query {
     goals: [Goal]
     profile: User
+    milestones: [Milestone]
+    questions: [Question]
   }
   
   schema {
