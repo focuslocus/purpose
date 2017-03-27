@@ -5,7 +5,7 @@ import webpack from 'webpack';
 import webpackDev from 'webpack-dev-middleware';
 import webpackConfig from '../webpack.config.babel';
 import { graphqlExpress, graphiqlExpress } from 'graphql-server-express';
-import { schema } from './schema';
+import schema from './schema';
 
 const app = express();
 const compiler = webpack(webpackConfig);
