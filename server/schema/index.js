@@ -57,4 +57,4 @@ const typeDefs = `
 const schema = makeExecutableSchema({ typeDefs });
 addMockFunctionsToSchema({ schema });
 
-export default schema
+export default schema;
