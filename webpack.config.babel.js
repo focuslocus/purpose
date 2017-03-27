@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 
 module.exports = {
-  entry: './app/app.js',
+  entry: './app/index.js',
   output: {
     path: resolve(__dirname, 'dist'),
     filename: 'bundle.js',
